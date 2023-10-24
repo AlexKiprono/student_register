@@ -20,46 +20,56 @@
 
                 {% csrf_token %}
               <div class="row">
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="img">Select image:</label>
+                    <br>
+                    <input type="file" id="img" name="img" accept="image/*">
+                  </div>
+                </div>
+                <br>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">Email address</label>
+                    <input class="form-control" type="email" placeholder="johndoe@example.com" name="email">
+                  </div>
+                </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Firstname</label>
-                    <input class="form-control" type="text" value="John" name="firstname">
+                    <input class="form-control" type="text" placeholder="John" name="firstname">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">Lastname</label>
-                    <input class="form-control" type="text" value="Doe" name="lastname">
+                    <input class="form-control" type="text" placeholder="Doe" name="lastname">
                   </div>
                 </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Email address</label>
-                    <input class="form-control" type="email" value="johndoe@example.com" name="email">
-                  </div>
-                </div>
+                
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">ADM NO.</label>
-                    <input class="form-control" type="int" value="00000.." name="adm_no">
+                    <input class="form-control" type="int" placeholder="00000.." name="adm_no">
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">GRADE</label>
-                    <input class="form-control" type="text" value="Lucky" name="grade">
+                    <input class="form-control" type="text" placeholder="Lucky" name="grade">
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">STATUS</label>
-                    <input class="form-control" type="text" value="active/inactive" name="status">
+                    <input class="form-control" type="text" placeholder="active/inactive" name="status">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="example-text-input" class="form-control-label">DATE</label>
-                    <input class="form-control" type="date" value="DATE" name="date">
+                    <input class="form-control" type="date" placeholder="DATE" name="date">
                   </div>
                 </div>
                 <div class="text-center">
@@ -69,3 +79,4 @@
               </div>
               </form>
               {% endblock %}
+
